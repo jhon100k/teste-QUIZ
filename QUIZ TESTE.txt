@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Renda Extra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question input {
+            margin: 5px 0;
+        }
+        button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de Renda Extra</h1>
+        <form id="quizForm">
+            <div class="question">
+                <label for="q1">1. Qual é o seu principal objetivo ao buscar uma renda extra?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            <div class="question">
+                <label for="q2">2. Você já tentou outras formas de renda extra antes?</label>
+                <input type="radio" id="yes" name="q2" value="Sim" required>
+                <label for="yes">Sim</label>
+                <input type="radio" id="no" name="q2" value="Não">
+                <label for="no">Não</label>
+            </div>
+            <div class="question">
+                <label for="q3">3. Qual é o maior desafio que você enfrenta ao tentar aumentar sua renda?</label>
+                <input type="text" id="q3" name="q3" required>
+            </div>
+            <button type="submit">Ver Resultados</button>
+        </form>
+        <p><a href="LINK_DA_VSL" target="_blank">Clique aqui para descobrir a solução perfeita para você!</a></p>
+    </div>
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Obrigado por participar do quiz! Confira nossa solução para ajudar você a alcançar seus objetivos de renda extra.');
+        });
+    </script>
+</body>
+</html>
